@@ -1,9 +1,10 @@
 #barra_fixa {
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: fixed; /* posição fixada da barra de menu */
+    top: 0; /* extremidade das margens */
+    left: 0; /* extremidade das margens */
     width: 100%;
     height: auto;
+    background-color: #336699;
 }
 
 #menu_bar_container {
@@ -24,7 +25,7 @@
 .menu_bar_btn {
     font-family: arial;
     font-size: 14px;
-    line-height: 60px;
+    line-height: 60px; /* altura da linha */
     position: relative;
     top: 0;
     display: inline-block;
@@ -34,19 +35,25 @@
     padding-left: 7px;
     padding-right: 7px;
     color: #fff;
-    border-bottom: 2px solid rgba(0, 0, 0, .0);
+    border-bottom: 2px solid rgba(0, 0, 0, .0); /* transformação */
     transition: .1s ease-in-out;
 }
 
+.menu_bar_btn:hover {
+    border-bottom: 2px solid white;
+}
+
+/* limpa configurações de links pre-definidas */
 a:visited {
     text-decoration: none;
 }
 a:active {
-
+    text-decoration: none;
 }
 a:link {
-
+    text-decoration: none;
 }
 a:hover {
-
+    text-decoration: none;
 }
+/* limpa configurações de links pre-definidas */
