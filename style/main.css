@@ -1,4 +1,4 @@
-#barra_fixa {
+#cabecalho {
     position: fixed; /* posição fixada da barra de menu */
     top: 0; /* extremidade das margens */
     left: 0; /* extremidade das margens */
@@ -7,16 +7,19 @@
     background-color: #336699;
 }
 
-#menu_bar_container {
+.bar_container {
     position: relative;
-    top: 0;
     height: auto;
     margin: auto 0;
     margin-right: 60px;
     margin-left: 60px;
 }
 
-#menu_bar {
+#menu {
+    top: 0;
+}
+
+#bar {
     max-width: 1200px;
     min-height: 60px;
     margin: 0 auto;
@@ -27,7 +30,7 @@
     right: 0;
 }
 
-.menu_bar_btn {
+.btn_bar {
     font-family: arial;
     font-size: 14px;
     line-height: 60px; /* altura da linha */
@@ -44,7 +47,7 @@
     transition: .1s ease-in-out;
 }
 
-.menu_bar_btn:hover {
+.btn_bar:hover {
     border-bottom: 2px solid white;
 }
 
