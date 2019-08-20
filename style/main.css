@@ -1,7 +1,47 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./fonts/MaterialIcons-Regular.eot);
+    /* For IE6-8 */
+    src: local('Material Icons'), local('MaterialIcons-Regular'), 
+    url(./fonts/MaterialIcons-Regular.woff2) format('woff2'), 
+    url(./fonts/MaterialIcons-Regular.woff) format('woff'), 
+    url(./fonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+
+.material_icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+}
+
 #cabecalho {
     position: fixed; /* posição fixada da barra de menu */
     top: 0; /* extremidade das margens */
     left: 0; /* extremidade das margens */
+    width: 100%;
+    height: auto;
+    background-color: #336699;
+}
+
+#corpo {
+    margin-top: 200px;
+}
+
+#rodape {
+    position: absolute;
+    left: 0;
     width: 100%;
     height: auto;
     background-color: #336699;
@@ -15,13 +55,22 @@
     margin-left: 60px;
 }
 
+#icon {
+    background: url(./img/icons/logo_white.png) no-repeat center;
+    background-size: 32px;
+}
+
+#icon span {
+    padding: 1px 1px;
+}
+
 #menu {
     top: 0;
 }
 
 #bar {
     max-width: 1200px;
-    min-height: 60px;
+    height: 62px;
     margin: 0 auto;
 }
 
@@ -33,21 +82,24 @@
 .btn_bar {
     font-family: arial;
     font-size: 14px;
-    line-height: 60px; /* altura da linha */
+    line-height: 60px;
     position: relative;
     top: 0;
     display: inline-block;
+    min-width: 32px;
     width: auto;
     height: 60px;
     margin-left: 0;
     padding-left: 7px;
     padding-right: 7px;
     color: #fff;
-    border-bottom: 2px solid rgba(0, 0, 0, .0); /* transformação */
+    border-top: 0px solid rgba(0, 0, 0, .0); /* transformação */
+    border-bottom: 0px solid rgba(0, 0, 0, .0); /* transformação */
     transition: .1s ease-in-out;
 }
 
 .btn_bar:hover {
+    border-top: 0px solid white !important;
     border-bottom: 2px solid white;
 }
 
