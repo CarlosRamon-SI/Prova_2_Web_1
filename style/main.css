@@ -10,7 +10,6 @@
     url(./fonts/MaterialIcons-Regular.ttf) format('truetype');
 }
 
-
 .material_icons {
     font-family: 'Material Icons';
     font-weight: normal;
@@ -70,7 +69,7 @@
 
 #bar {
     max-width: 1200px;
-    height: 62px;
+    height: 64px;
     margin: 0 auto;
 }
 
@@ -93,14 +92,17 @@
     padding-left: 7px;
     padding-right: 7px;
     color: #fff;
-    border-top: 0px solid rgba(0, 0, 0, .0); /* transformação */
-    border-bottom: 0px solid rgba(0, 0, 0, .0); /* transformação */
+    border-top: 2px solid #ffffff00;
+    border-bottom: 2px solid #ffffff00;
     transition: .1s ease-in-out;
 }
 
-.btn_bar:hover {
-    border-top: 0px solid white !important;
-    border-bottom: 2px solid white;
+#menu .btn_bar:hover {
+    border-bottom: 2px solid #ffffff;
+}
+
+#creditos .btn_bar:hover {
+    border-top: 2px solid #ffffff;
 }
 
 /* limpa configurações de links pre-definidas */
