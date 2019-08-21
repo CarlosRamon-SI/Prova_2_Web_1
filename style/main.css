@@ -109,6 +109,24 @@
     border-top: 2px solid #ffffff;
 }
 
+.btn_webmaster {
+    line-height: 14px;
+    position: absolute;
+    top: 16px;
+    height: 14px;
+    padding-top: 8px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    transition: .1s ease-in-out;
+    border-radius: 6px;
+    background: rgba(255,255,255,.8);
+}
+
+.btn_webmaster:hover {
+    background: #3366991a;
+}
+
 /* limpa configurações de links pre-definidas */
 a:visited {
     text-decoration: none;
