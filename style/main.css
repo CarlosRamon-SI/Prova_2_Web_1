@@ -43,7 +43,11 @@
     left: 0;
     width: 100%;
     height: auto;
-    background-color: #336699;
+    background: url(./img/backgrounds/rdp_bkg_flores.png);
+    background-size: 64px;
+    background-repeat: repeat;
+    background-position: left;
+    /* background-color: #336699; */
 }
 
 .bar_container {
