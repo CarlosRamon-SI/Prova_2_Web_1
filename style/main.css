@@ -26,6 +26,13 @@
     vertical-align: middle;
 }
 
+#corpo {
+    top: 64px;
+    left: 0;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+}
+
 #cabecalho {
     position: fixed; /* posição fixada da barra de menu */
     top: 0; /* extremidade das margens */
@@ -35,10 +42,12 @@
     background-color: #336699;
 }
 
-#corpo {
-    margin-top: 200px;
+#meio {
+    margin-top: 64px;
+    border: 1px solid black;
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
-
 #rodape {
     position: absolute;
     left: 0;
@@ -48,6 +57,8 @@
     background-size: 64px;
     background-repeat: repeat;
     background-position: left;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
 .bar_container {
