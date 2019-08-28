@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Carlos Ramon Moreira Leite">
+        <link rel="stylesheet" href="./style/main.css">
+        <link rel="stylesheet" href="./style/login.css">
+        <title>Prova 2 Ambiente Web 1</title>
+    </head>
+
+    <a href="ver_noticia.php?" id></a>
+    <body>
+        <div id="cabecalho">
+            <div class="menu bar_container">
+                <div id="bar">
+                    <a href="index.html">
+                        <div id="ico" class="btn_bar" title="Home">
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="btn_bar" title="btn 02" >
+                            Btn 02
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="btn_bar" title="btn 03">
+                            <span>Btn 03</span>
+                        </div>        
+                    </a>
+                    <a href="">
+                        <div class="btn_bar" title="btn 04">
+                            <span>Btn 04</span>
+                        </div>        
+                    </a>
+                    <a href="">
+                        <div class="btn_bar" title="btn 05">
+                            <span>Btn 05</span>
+                        </div>        
+                    </a>                                            
+                </div>
+                <a href="index.html">
+                    <div id="btn_login" class="btn_bar">
+                        <span> <i class="material_icons">arrow_back</i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="corpo">
+                <div class="container" >
+                        <div class="content">      
+                            <div id="login_form">
+                            <form method="post" action="./src/login.php"> 
+                                <h1>Login</h1> 
+                                <p> 
+                                <label for="txt_id">ID</label>
+                                <input id="txt_id" name="id" required="required" type="text" placeholder="usuario"/>
+                                </p>
+                                <p> 
+                                <label for="senha_login">Senha</label>
+                                <input id="senha_login" name="senha_login" required="required" type="password" placeholder="1234" /> 
+                                </p>
+                                <p> 
+                                <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+                                <label for="manterlogado">Manter logado</label>
+                                </p>
+                                <p> 
+                                <input type="submit" value="Conectar" /> 
+                                </p>
+                                <p class="link">
+                                Ainda não tem conta?
+                                <a href="">Cadastre-se</a>
+                                </p>
+                            </form>
+                            </div>
+                        </div>
+                    </div> 
+                
+        </div>
+        <div id="rodape">
+            <div id="creditos" class="bar_container">
+                <div id="bar">
+                    <a href="https://fb.com/carloskate69" target="_blank">
+                        <div class="btn_webmaster" title="Webmaster">
+                            <span> <i class="material_icons">face</i> webmaster </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
