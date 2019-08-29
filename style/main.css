@@ -115,7 +115,7 @@ span, p {
     height: 100%;
     overflow:hidden;
     white-space: nowrap;
-    transition: all 0.5s ease;
+    /* transition: all 0.5s ease; */
     animation: recolhe_menu 0.5s;
 }
 
@@ -163,6 +163,18 @@ span, p {
     background-color: rgba(0, 0, 0, .0);
 }
 
+.desc_menu {
+    animation: desvanecer 20s forwards;
+}
+
+@keyframes desvanecer {
+    0% {
+        color: rgba(0, 0, 0, 0);
+    }
+    100% {
+        color: #336699;
+    }
+}
 .menu_btn:hover {
     background-color: rgba(51, 102, 153,.1);
 }
