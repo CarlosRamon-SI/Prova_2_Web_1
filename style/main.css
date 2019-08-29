@@ -48,7 +48,7 @@ span, p {
     margin-left: -8px;
     margin-right: -6px;
     display: grid;
-    grid-template-columns: 42px 25px auto 25px 17%;
+    grid-template-columns: 45px 25px auto 25px 17%;
     grid-template-rows: 10px;
 }
 
@@ -82,7 +82,7 @@ span, p {
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
-    margin: 5px;
+    margin: 5px 0;
     background-color: #fff;
     border-radius: 6px;
     color: #336699;
@@ -95,7 +95,7 @@ span, p {
     grid-column-end: 6;
     grid-row-start: 2;
     grid-row-end: 3;
-    margin: 5px;
+    margin: 5px 0;
     background-color: #fff;
     border-radius: 6px;
     color: #336699;
@@ -103,6 +103,7 @@ span, p {
 
 #menu {
     z-index: 997;
+    position: fixed;
     cursor: default;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-color: #fff;
@@ -110,21 +111,25 @@ span, p {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 6;
-    width: 42px;
+    width: 45px;
+    height: 100%;
     overflow:hidden;
     white-space: nowrap;
+    transition: all 0.5s ease;
+    animation: recolhe_menu 0.5s;
 }
 
-/* #desc_menu {
-    display: none;
-} */
-
-#menu:hover {
-    animation: expande_menu 1s forwards;
+#menu:hover, #menu:focus, #menu:active {
+    animation: expande_menu 0.5s forwards;
 }
 
-#menu:hover::after {
-    animation: expande_menu 1s reverse;
+@keyframes recolhe_menu {
+    0%{
+        width: 150px;
+    }
+    100%{
+        width: 45px;
+    }
 }
 
 @keyframes expande_menu {
@@ -146,10 +151,11 @@ span, p {
     border-radius: 6px;
     width: 100%;
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 5;
 }
 
 .menu_btn {
+    cursor: default;
     position: relative;
     padding-left: 10px;
     padding-top: 5px;
@@ -168,21 +174,6 @@ span, p {
     grid-row-end: 4;
 }
 
-.content {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: #fff;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    min-height: 187px;
-    margin: 5px;
-    border-radius: 6px;
-    text-align: justify;
-    line-height: 35px;
-    padding: 10px;
-}
-
 #side {
     grid-column-start: 5;
     grid-column-end: 6;
@@ -191,7 +182,7 @@ span, p {
 }
 
 #box {
-    margin: 4px;
+    margin: 4px 0;
     border-radius: 6px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: #fff;
@@ -202,6 +193,8 @@ span, p {
     grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end: 6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .box_item {
@@ -209,7 +202,7 @@ span, p {
     background: linear-gradient(to bottom, rgba(255, 255, 255, .8), rgba(51, 102, 153, .5)) !important;
     text-align: center;
     margin: 10px auto;
-    max-width: 200px;
+    max-width: 90%;
     background-color: #fff;
 }
 
@@ -256,6 +249,7 @@ span, p {
 }
 
 .btn_bar {
+    cursor: default;
     font-size: 14px;
     line-height: 60px;
     position: relative;
@@ -311,3 +305,19 @@ a:hover {
     text-decoration: none;
 }
 /* limpa configurações de links pre-definidas */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #336699;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6699cc;
+}
