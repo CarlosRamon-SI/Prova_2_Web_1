@@ -10,7 +10,7 @@ body{
 
 #corpo {
     grid-template-columns: 30% 25px auto 25px 30%;
-    grid-template-rows: 30%;
+    grid-template-rows: 10%;
 }
 
 .container {

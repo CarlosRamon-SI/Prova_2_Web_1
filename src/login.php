@@ -1,27 +1,25 @@
-<?php
-
-require "conexao.php";
-
-session_start();
-
-$login = isset($_POST["id"]) ? addslashes(trim($_POST["id"])) : FALSE;
-$senha = isset($_POST["senha_login"]) ? md5(trim($_POST["senha_login"])) : FALSE;
-
-$SQL = "SELECT * FROM usuarios WHERE usuario     = ' " . $login . " ' ";
-$result_id = pg_query($conn, $SQL) or die("Erro no Banco de dados!");
+<?php 
+require "comum.php"; 
+ 
+session_start(); 
+ 
+$login = addslashes(trim($_POST["login"]));
+$senha = isset($_POST["senha"]) ? md5(trim($_POST["senha"])) : FALSE;
+ 
+$SQL = "SELECT * FROM usuarios WHERE usuario = '" . $login . "';";
+$result_id = pg_query($conn, $SQL);
 $total = pg_num_rows($result_id);
-
-if($total) {
-    $dados = pg_array($result_id);
+ 
+if($total) { 
+    $dados = pg_fetch_array($result_id); 
     if(!strcmp($senha, $dados["senha"])) {
-        $_SESSION["idusuario"] = $dados["id"];
-        $_SESSION["usuario"] = stripslashes($dados["nome"]);
+        $_SESSION["nome_usuario"] = stripslashes($dados["usuario"]); 
         header("Location: index.php");
-        exit;
-    } else {
-        echo "Senha inválida!";
+        unset($_SESSION["logon"]);
+        exit; 
     }
-} else {
-    echo "O login fornecido não existe!";
 }
+$_SESSION["logon"] = "Login ou Senha inválidos!";
+header("Location: index.php");
+exit;
 ?>
