@@ -184,6 +184,13 @@ span, p {
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    margin: 5px 0;
+    border-radius: 6px;
+    text-align: justify;
+    line-height: 35px;
+    padding: 10px;
 }
 
 #side {
