@@ -179,7 +179,7 @@ span, p {
 }
 
 #main {
-    grid-column-start: 2;
+    grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
@@ -188,7 +188,7 @@ span, p {
     margin: 5px 0;
     border-radius: 6px;
     text-align: justify;
-    line-height: 75px;
+    line-height: 35px;
     padding: 10px;
 }
 
