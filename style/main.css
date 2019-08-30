@@ -115,7 +115,6 @@ span, p {
     height: 100%;
     overflow:hidden;
     white-space: nowrap;
-    /* transition: all 0.5s ease; */
     animation: recolhe_menu 0.5s;
 }
 
