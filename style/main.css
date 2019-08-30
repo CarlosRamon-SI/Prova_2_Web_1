@@ -261,10 +261,12 @@ span, p {
     display: flex;
 }
 
-#btn_login {
+#btn_login, #greeting {
     position: absolute;
     right: 0;
 }
+
+
 
 .btn_bar {
     cursor: default;
