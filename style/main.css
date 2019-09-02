@@ -256,17 +256,10 @@ span, p {
 
 #bar {
     max-width: 1200px;
-    height: 64px;
+    height: 62px;
     margin: 0 auto;
     display: flex;
 }
-
-#btn_login, #greeting {
-    position: absolute;
-    right: 0;
-}
-
-
 
 .btn_bar {
     cursor: default;
@@ -278,13 +271,28 @@ span, p {
     min-width: 32px;
     width: auto;
     height: 60px;
-    margin-left: 0;
     padding-left: 7px;
     padding-right: 7px;
     color: #fff;
-    border-top: 2px solid #ffffff00;
     border-bottom: 2px solid #ffffff00;
     transition: .1s ease-in-out;
+}
+
+.greeting {
+    cursor: default;
+    font-size: 14px;
+    line-height: 60px;
+    height: 60px;
+    padding-left: 7px;
+    padding-right: 7px;
+    color: #fff;
+    display: block;
+    position: absolute;
+    right: 0;
+}
+
+.greeting > a {
+    color: #fff;
 }
 
 .menu .btn_bar:hover {
