@@ -36,7 +36,7 @@
                     </a>
                     <?php
                     session_start();
-                    
+
                     if(isset($_SESSION["nome_usuario"])){
                         echo    "<div id=\"none\" class=\"greeting\">";
                         echo    "    <span>Bem-vindo ";
@@ -52,7 +52,7 @@
                         echo    "    </span>";
                         echo    "</div>";
                     } else {
-                        echo    "<a href=\"auth.html\">";
+                        echo    "<a href=\"./src/auth.html\">";
                         echo    "   <div id=\"btn_login\" class=\"btn_bar\">";
                         echo    "       <span>Login</span>";
                         echo    "   </div>";
